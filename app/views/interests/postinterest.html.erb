@@ -1,14 +1,94 @@
- <!--home start-->
+ <% if Interest.create.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(Interest.create.errors.count, "error") %> prohibited this interest from being saved:</h2>
+
+      <ul>
+      <% Interest.create.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+
+    <% @interest = Interest.new %>
+
+<%= form_for @interest, :url => url_for(:action=>'postinterest', :controller=>'interests', :method=>'post', remote: true) do |f| %>
+
+
+<div class="field">
+    <%= f.text_field :email %>
+</div>
+
+<div class="actions">
+    <%= f.submit "Post", :class=>"btn btn-info" %> 
+</div>  
+
+<%end%>
+
+    <% else %>
+
+    Thanks for your submission
+  <% end %>
+
+
+
+
+
+
+<!--home start-->
     
     <div id="home">
     	<div class="headerLine">
 	<div id="menuF" class="default">
 		<div class="container">
-			
+			<div class="row">
+				<div class="logo col-md-4">
+					<div>
+						<a href="#">
+							<img src="images/logo.png">
+						</a>
+					</div>
+				</div>
+				<div class="col-md-8">
+					<div class="navmenu"style="text-align: center;">
+						<ul id="menu">
+							<li class="active" ><a href="#home">Home</a></li>
+							<li><a href="#about">About</a></li>
+							<li><a href="#partners">Partners</a></li>
+							<li class="last"><a href="#contact">Contact</a></li>
+							<!--li><a href="#features">Features</a></li-->
+						</ul>
+					</div>
+				</div>
+			</div>
 		</div>
 	</div>
 		<div class="container">
-			
+			<div class="row wrap">
+				<div class="col-md-12 gallery"> 
+						<div class="camera_wrap camera_white_skin" id="camera_wrap_1">
+							<div data-thumb="" data-src="images/slides/blank.gif">
+								<div class="img-responsive camera_caption fadeFromBottom">
+									<h2>We provide tools.</h2>
+								</div>
+							</div>
+							<div data-thumb="" data-src="images/slides/blank.gif">
+								<div class="img-responsive camera_caption fadeFromBottom">
+									<h2>We run events.</h2>
+								</div>
+							</div>
+							<div data-thumb="" data-src="images/slides/blank.gif">
+								<div class="img-responsive camera_caption fadeFromBottom">
+									<h2>We share stories.</h2>
+								</div>
+							</div>
+							<div data-thumb="" data-src="images/slides/blank.gif">
+								<div class="img-responsive camera_caption fadeFromBottom">
+									<h2>We design accessories.</h2>
+								</div>
+							</div>
+						</div><!-- #camera_wrap_1 -->
+				</div>
+			</div>
 		</div>
 	</div>
 	
@@ -35,25 +115,10 @@
 
 
 
-<% if false %>
 
 
-<% @interest = Interest.new %>
-
-<%= form_for @interest, :url => url_for(:action=>'postinterest', :controller=>'interests', :method=>'post', remote: true) do |f| %>
 
 
-<div class="field">
-    <%= f.text_field :email %>
-</div>
-
-<div class="actions">
-    <%= f.submit "Post", :class=>"btn btn-info" %> 
-</div>  
-
-<%end%>
-
-<% end %>
 
 
 
@@ -470,3 +535,5 @@
 			
 		});
 	</script>
+
+

@@ -1,7 +1,45 @@
 Rails.application.routes.draw do
+  resources :interests
   get 'home/homepage'
 
+  get '/hackthehouse' => 'home#hackthehouse'
+
   root 'home#homepage'
+
+ 
+  match "postinterest" => "interests#postinterest" , :via => [:post], :as => 'postinterest'
+
+
+
+    get '/information' => 'home#information'
+
+  get '/inspirations' => 'home#inspirations'
+
+  get '/business-model' => 'home#business-model'
+
+  get '/customer-validation' => 'home#customer-validation'
+
+  get '/scalability' => 'home#scalability'
+
+  get '/technology' => 'home#technology'
+
+  get '/design' => 'home#design'
+
+  get '/demo' => 'home#demo'
+
+  get '/pitch-presentation' => 'home#pitch-presentation'
+
+  get '/agenda' => 'home#agenda'
+
+  get '/criteria' => 'home#criteria'
+
+  get '/prizes' => 'home#prizes'
+
+  get '/menu' => 'home#menu'
+
+  get '/brief' => 'home#brief'
+
+  get '/checklist' => 'home#checklist'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
