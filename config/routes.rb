@@ -41,6 +41,21 @@ Rails.application.routes.draw do
 
   get '/checklist' => 'home#checklist'
 
+  get '/dollar-shave-club' => 'home#dollar-shave-club'
+
+  get '/washio' => 'home#washio'
+
+  get '/honest-company' => 'home#honest-company'
+
+  get '/task-rabbit' => 'home#task-rabbit'
+
+  get '/hassle' => 'home#hassle'
+
+  get '/epantry' => 'home#epantry'
+
+  get '/bizzby' => 'home#bizzby'
+
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

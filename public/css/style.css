@@ -9,7 +9,6 @@ fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td {outline: none !important;
 }
 html{
-	background:#fff;
 }
 
 h3	{
@@ -22,6 +21,7 @@ h3	{
 
 body{
 	font-family: 'Roboto', 'sans-serif';
+	background: #223465;
 }
 .headerLine{
 	position: relative;

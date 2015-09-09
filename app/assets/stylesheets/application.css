@@ -35,6 +35,26 @@ text-align: center;
 letter-spacing: 4px;
 }
 
+.italic {
+  font-style: italic;
+  font-size: 12px;
+}
+
+h2.pages {
+  color:#FFFFFF;
+  font-family:'Open Sans', sans-serif!important;
+  font-size:18px!important;
+  font-weight:bold!important;
+  letter-spacing:1px;
+  padding-left:0px!important;
+  margin: 0!important;
+  text-align:left;
+  text-transform:uppercase;
+ }
+
+
+
+
 .jumbotron{
 	width: 100% !important;
 	background-color: none !important;
@@ -235,7 +255,7 @@ margin-top: 0;
 }
 
  #menuleft a   {
-  margin: 15px 0 15px 15px;
+  margin: 15px 0 0 15px;
   background: #132647;
   display:inline-block;
   cursor:pointer;
@@ -453,6 +473,10 @@ font-size: 15px!important;
     text-align: justify;
     padding-left: 15px;
     margin-top: 40px;
+}
+
+.brief:first-child {
+  margin-top: 0;
 }
 
 div.checkoutleft {
