@@ -397,6 +397,7 @@ display: block;
 
 .brieflist {
   margin-left:120px;
+  width: 800px;
 }
 
 .brieflist  a img {
