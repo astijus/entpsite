@@ -28,7 +28,7 @@ body{
 	width: 100%;
 	overflow: hidden;
 	height:80%;
-	background: url(../images/bgTop2.jpg) 100% center no-repeat!important;
+	background: url(../images/bgTop2.jpg) 100% no-repeat!important;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;

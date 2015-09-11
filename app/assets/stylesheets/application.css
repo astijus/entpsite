@@ -14,8 +14,13 @@
  *= require_self
  */
 
+ a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none!important;
+}
+
  body {
-  background: #223465 none repeat scroll 0 0!important;
+  background: #14203A none repeat scroll 0 0!important;
   width: 100%;
   font-size:100%
 }
@@ -71,20 +76,8 @@ h2.pages {
     margin: 10px auto 40px auto;
 }
 
- .boxsoon{
-    width: 200px ;
-    height: 200px;
-    background: #071038;
-    overflow: auto;
-    color: #fff;
-    padding: 45px 30px;
-    margin: 10px auto 40px auto;
-}
 
-.boxsoon:hover  {
-background: #d22d1d;
 
-}
 
 .box:hover  {
 background: #d22d1d;
@@ -107,20 +100,26 @@ background: #d22d1d;
 
 }
 
- .boxsoon2{
+
+ .boxbreak2{
     width: 200px ;
     height: 200px;
-    background: #071038;
+    background: #0c1424;
     overflow: auto;
-    color: #fff;
-    padding: 35px 30px;
+    padding:10px 30px;
     margin: 10px auto 40px auto;
-}
-
-.boxsoon2:hover  {
-background: #d22d1d;
 
 }
+
+ .boxbreak2 h2{
+
+    color: #99190C!important;
+
+
+}
+
+
+ 
 
 
 #contentrow {
@@ -169,7 +168,7 @@ a.boxa:hover {
 
 
 a.boxa h2  {
-  color: #fff;
+  color: #fcfcfc;
   margin: 0 auto;
   padding-top: 35px;
   text-align: center;
@@ -265,6 +264,27 @@ margin-top: 0;
   width: 80%;
   padding:15px;
   text-decoration:none;
+}
+
+ #menuleft a.tools   {
+  margin: 15px 0 0 15px;
+  background: #132647;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff;
+  font-family:Arial;
+  max-width: 80%;
+  width: 80%;
+  padding:15px;
+  text-decoration:none;
+}
+
+
+#menuleft a.tools:hover   {
+  background:#5adcc6;
+  display:inline-block;
+  cursor:pointer;
+  color:#ffffff!important;
 }
 
 
@@ -398,6 +418,10 @@ display: block;
 .brieflist {
   margin-left:120px;
   width: 800px;
+}
+
+.brief a {
+  color: #D22D1D;
 }
 
 .brieflist  a img {

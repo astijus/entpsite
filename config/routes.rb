@@ -21,7 +21,7 @@ Rails.application.routes.draw do
 
   get '/scalability' => 'home#scalability'
 
-  get '/technology' => 'home#technology'
+  get '/team' => 'home#team'
 
   get '/design' => 'home#design'
 
@@ -54,6 +54,11 @@ Rails.application.routes.draw do
   get '/epantry' => 'home#epantry'
 
   get '/bizzby' => 'home#bizzby'
+
+  get '/have-fun' => 'home#have-fun'
+
+  get '/judges' => 'home#judges'
+
 
 
   # The priority is based upon order of creation: first created -> highest priority.
